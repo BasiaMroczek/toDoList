@@ -46,7 +46,7 @@
         });
     };
 
-    function render() {
+    const render = () => {
         let htmlString = "";
 
         for (const task of tasks) {
@@ -55,14 +55,14 @@
             <button class="list__button--add js-done">${task.done ? '🗸' : ''}</button>
             <span class= "list ${task.done ? "list__item--done" : "list"}">${task.content}
             </span>
-            <button class="list__button--remove js-remove">🗑</button>
+            <button class="list__button--remove js-remove">🗑️</button>
             </li>
             `;
         }
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
-        bindEvents();
-    }
+       bindEvents();
+    };
 
     const onFormSubmit = (event) => {
         event.preventDefault();

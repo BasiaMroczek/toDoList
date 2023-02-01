@@ -22,7 +22,7 @@
     padding: 7px;
     height: 30px;
     width: 30px;
-    background-color: hsl(103, 100%, 25%);
+    background-color: #248000;
     color: white;
     border: none;
     cursor: pointer;
@@ -34,7 +34,7 @@
     height: 30px;
     width: 30px;
     padding: 5.5px 5px 5px 4px;
-    background-color: red;
+    background-color: #ff0000;
     border: none;
     cursor: pointer;
 }
