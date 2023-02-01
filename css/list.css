@@ -1,0 +1,40 @@
+.list {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0px;
+}
+
+.list__item {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: auto 1fr auto;
+    border-bottom: 1px solid #ddd;
+    align-self: center;
+}
+
+.list__item--done {
+    text-decoration: line-through;
+}
+
+.list__button--add {
+    display: grid;
+    align-self: center;
+    padding: 7px;
+    height: 30px;
+    width: 30px;
+    background-color: hsl(103, 100%, 25%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.list__button--remove {
+    display: grid;
+    align-self: center;
+    height: 30px;
+    width: 30px;
+    padding: 5.5px 5px 5px 4px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+.form {
+    min-width: 200px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form__input {
+    border: 1px solid #ccc;
+    padding: 5px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.form__button {
+    background-color: teal;
+    color: white;
+    padding: 5px;
+    border: 1px solid black;
+}
