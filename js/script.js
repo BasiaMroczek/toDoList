@@ -60,7 +60,7 @@
             `;
         }
 
-        document.querySelector(".js-newTask").innerHTML = htmlString;
+        document.querySelector(".js-tasks").innerHTML = htmlString;
 
         bindEvents();
     };
