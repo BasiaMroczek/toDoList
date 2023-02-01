@@ -17,4 +17,4 @@ This app will help you plan your day.
 </ul>
 
 ## Link to App
-https://basiamroczek.github.io/homepage/
+https://basiamroczek.github.io/toDoList/?
