@@ -1,40 +1,47 @@
-.list {
+.tasks {
     list-style-type: none;
-    padding: 20px;
-    margin: 0px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 30px auto 30px;
+    align-items: center;
+    grid-gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dadada;
+}
+
+.task__button {
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.task__button--done {
+    background-color: #008000;
+}
+
+.task__button--done:hover {
+    background-color: #009400;
+}
+
+.task__button--remove {
+    background-color: #ff0000;
+}
+
+.task__button--remove:hover {
+    background-color: #e00000;
 }
 
 .list__item {
-    display: grid;
-    padding: 10px;
-    grid-template-columns: auto 1fr auto;
-    border-bottom: 1px solid #ddd;
-    align-self: center;
+    margin-right: 10px;
 }
 
 .list__item--done {
     text-decoration: line-through;
-}
-
-.list__button--add {
-    display: grid;
-    align-self: center;
-    padding: 7px;
-    height: 30px;
-    width: 30px;
-    background-color: #248000;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.list__button--remove {
-    display: grid;
-    align-self: center;
-    height: 30px;
-    width: 30px;
-    padding: 5.5px 5px 5px 4px;
-    background-color: #ff0000;
-    border: none;
-    cursor: pointer;
 }
